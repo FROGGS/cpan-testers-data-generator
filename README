@@ -27,8 +27,8 @@ DESCRIPTION
 
        A good example query for Acme-Colour would be:
 
-         SELECT version, status, count(*) FROM cpanstats WHERE
-         distribution = "Acme-Colour" group by version, state;
+         SELECT version, state, count(*) FROM cpanstats WHERE
+         dist = "Acme-Colour" group by version, state;
 
        To create a database from scratch can take several days, as there are
        now over 2 million articles in the newgroup. As such updating from a
